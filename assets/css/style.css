@@ -27,6 +27,7 @@
     1. COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto:ital,wght@0,100;0,300;1,100;1,300;1,900&display=swap');
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -771,6 +772,14 @@ p {
 /*===========================
         3.ABOUT css 
 ===========================*/
+.about-name{
+  font-family: 'Borel', cursive;
+  font-size: 2.3em;
+  line-height: 62px;
+}
+.aboutme-name{
+  font-family: 'Borel', cursive;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-area {
     padding-top: 90px;
