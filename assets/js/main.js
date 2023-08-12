@@ -137,6 +137,31 @@
 
     
     
+    // Calculate years of experience
+    $(document).ready(function(){
+       function calculateYOE(){
+       // Get the entered startDate value
+       var startDate = '2016-03-01';
+                
+       // Convert the startDate string to a Date object
+       var startDateObj = new Date(startDate);
+       
+       // Get the current date
+       var currentDate = new Date();
+       
+       // Calculate the exp
+       var exp = currentDate.getFullYear() - startDateObj.getFullYear();
+       
+       // Adjust the exp if the birthday hasn't occurred yet this year
+       if (currentDate.getMonth() < startDateObj.getMonth() || (currentDate.getMonth() === startDateObj.getMonth() && currentDate.getDate() < startDateObj.getDate())) {
+           exp--;
+       }
+       
+       // Display the calculated exp
+       $('#yearsOfExp').text(exp);
+       }
+       calculateYOE();
+    });
     
     
     
