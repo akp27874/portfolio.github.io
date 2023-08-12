@@ -1801,3 +1801,8 @@ p {
     max-width: 900px;
   }
 }
+
+/* Function css */
+.alert{
+  display: none;
+}

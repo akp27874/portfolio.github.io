@@ -292,15 +292,18 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-form pt-30">
-                        <form id="contact-form" action="assets/contact.php">
+                        <div class="alert alert-success text-center" role="alert">
+                            Message sent successfuly !
+                          </div>
+                        <form id="contact-form">
                             <div class="single-form">
-                                <input type="text" name="name" placeholder="Name">
+                                <input id="name" type="text" name="name" placeholder="Name" required>
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
+                                <input id="email" type="email" name="email" placeholder="Email" required>
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
+                                <textarea id="message" name="message" placeholder="Message"></textarea>
                             </div> <!-- single form -->
                             <p class="form-message"></p>
                             <div class="single-form">
@@ -350,7 +353,7 @@
 
 
 
-
+    
 
     <!--====== jquery js ======-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
@@ -381,6 +384,12 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+    
+    <!--====== Firebase =======-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <!--====== App js =======-->
+    <script src="assets/js/contact.js"></script>
 
 </body>
 
