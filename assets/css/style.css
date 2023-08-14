@@ -862,12 +862,20 @@ p {
       transition: all 2s ease-out 0s;
       width: 0; }
 
-      /*  */
-      
-      
-      
-      /*  */
-
+      #profile-pic{
+        display: flex;
+        margin: auto;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        overflow: hidden; /* Hide any overflowing content */
+      }
+      #profile-pic img{
+        height: 100%;
+        width: 100%; /* Make sure the image takes up the entire container */
+        object-fit: cover; /* Maintain the aspect ratio and cover the container */
+      }
+   
 /*===========================
         4.SERVICES css 
 ===========================*/
