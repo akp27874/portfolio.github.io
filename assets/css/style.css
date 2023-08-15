@@ -874,6 +874,11 @@ p {
         height: 100%;
         width: 100%; /* Make sure the image takes up the entire container */
         object-fit: cover; /* Maintain the aspect ratio and cover the container */
+        transition: all ease .5s;
+      }
+
+      #profile-pic:hover img{
+        scale: 1.2;
       }
    
 /*===========================
